@@ -16,6 +16,7 @@ using namespace std;
 
 static string				src_file;
 static FILE*				src_fp = NULL;
+static int				clock_width = -1;
 
 static vector<double>			csv_capture;
 
