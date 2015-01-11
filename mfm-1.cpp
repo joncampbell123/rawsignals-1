@@ -49,7 +49,7 @@ static unsigned char*			dst_scanline;		/* one scanline (8-bit grayscale) */
 static vector<double>			csv_capture;
 
 static void help() {
-	fprintf(stderr,"ntsc-1 [options]\n");
+	fprintf(stderr,"mfm-1 [options]\n");
 	fprintf(stderr," -s <csv file>\n");
 	fprintf(stderr," -d <bmp file>\n");
 	fprintf(stderr," -w width to render to\n");
