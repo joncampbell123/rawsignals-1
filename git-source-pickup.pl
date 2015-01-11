@@ -3,6 +3,7 @@
 $project = `git config --get remote.origin.url | sed -e 's/\\/\$//' | sed -e 's/^.*\\///'`;
 chomp $project;
 die if $project eq "";
+$project =~ s/\.git$//;
 
 $branch = `git branch | grep '^\*' | sed -e 's/^\* //'`; chomp $branch;
 $branchfname = "-branch-$branch" if $branch ne "";
